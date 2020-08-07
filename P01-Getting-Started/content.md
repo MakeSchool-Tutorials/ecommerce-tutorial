@@ -3,13 +3,13 @@ title: "Getting Started"
 slug: getting-started
 ---
 
-# Overview
+## Overview
 ![Mood Gif](assets/01_getting-started_mood.gif "Mood Gif")
 
 Did you know your emotions can change how you taste food?  I think everyone agrees that they would want their foods to taste good! 🥗🍔🍕🍇😋
-Imagine if there was a place where you could go to and buy any type of mood you want. 
-Well guess what? We’re going to build that! Well… sort of. 
-Join me as we go deep into the world of HTML, CSS and Javascript and build The Mood Shop! 
+Imagine if there was a place where you could go to and buy any type of mood you want.
+Well guess what? We’re going to build that! Well… sort of.
+Join me as we go deep into the world of HTML, CSS and Javascript and build The Mood Shop!
 
 ***Add a screenshot of the end product***
 
@@ -24,7 +24,6 @@ None
 
 # Learning Outcomes
 
-```
 By the end of this tutorial, you should be able to...
 
 1. Write valid and semantic HTML
@@ -33,11 +32,8 @@ By the end of this tutorial, you should be able to...
 1. Use JavaScript to create dynamic content and handle user interactions in your web applications
 1. Create variables, handle events on the web page, and write javascript functions
 
-```
 
-# Using Git/GitHub
 
-```
 # Using Git/GitHub
 
 As you go through this tutorial, you will also be making commits after completing milestones. This is a requirement, you must make a commit whenever the tutorial prompts you. This not only further enforces best practices for software engineering, but also will help you more easily figure out where a bug originated from if you break your progress up into discrete, trackable chunks.
@@ -45,25 +41,28 @@ As you go through this tutorial, you will also be making commits after completin
 When prompted to commit, you'll see a sample commit message. Feel free to use your own message, so long as it clearly and concisely covers the work done.
 
 Lastly, the commit prompts in this tutorial should be the minimum amount of times you commit. If you want to do more commits, breaking your chunks into even smaller chunks, that is totally fine!
-```
+
 
 # Git Setup
 
-> [action] Start by creating your project folder with the name **mood-shop**. 
+> [action] Start by creating your project folder with the name **mood-shop**.
+>
 ```bash
 mkdir mood-shop
 ```
-
->[action] go into your project folder 
+>
+> go into your project folder
+>
 ```bash
 cd mood-shop
 ```
->[action] create an index.html file
+>
+> create an index.html file
 ```bash
 touch index.html
 ```
 
-```
+
 # Set Up Git/GitHub
 
 Set up your repo!
@@ -86,4 +85,3 @@ Now Go to GitHub and create a public repository called mood-shop, and now associ
 $ git remote add origin GITHUB-REPO-URL
 $ git push origin master -u
 ```
-
