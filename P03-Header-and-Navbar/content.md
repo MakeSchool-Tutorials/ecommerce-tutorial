@@ -48,6 +48,8 @@ The ```<ul>``` tag defines an unordered (bulleted) list.
 
 Yay! You should see the name of your site, **The Mood Shop**, and 3 links.
 
+![Navbar No style](assets/01_header-navbar_unstyled-navbar.png "Navbar no style")
+
 >[info] Now is a great time to commit your progress.
 >
 ```bash
