@@ -22,6 +22,7 @@ We will add a footer element in our html.
 ```
 
 Your HTML markup should now look like this:
+
 ```html
 <html lang="en">
 <head>
@@ -47,7 +48,6 @@ Your HTML markup should now look like this:
      -->
   </main>
   <footer>
- 
   </footer>
   <script src='./resources/js/scripts.js' type="module"></script>
 </body>

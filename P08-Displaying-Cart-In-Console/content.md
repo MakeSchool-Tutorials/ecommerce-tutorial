@@ -4,8 +4,11 @@ slug: displaying-cart-in-console
 ---
 
 In this chapter there will be 3 videos that will guide you in: 
+
 - Displaying cart items in the console using a for loop
+
 - Displaying the total amount of price for our cart
+
 - Displaying the number of items we have in our cart
 
 
