@@ -11,23 +11,25 @@ At the end of this chapter, we will be able to have something like this.
 
 The first thing we need are the images to display for each mood.
 
->[action]
-> Download the images folder from here ***(provide link to download)***
-> Save this image folder in your project inside the folder /resources. So -ecommerce/resources/images
-
 The next thing we will need to do is get the json data that holds all the information about each mood including the name, image url, description and price.
 
 The json data that we will be using is located in data.js file.
 
 >[action]
-> Download this file from here ***(enter link that directs to download)***
+> Both the images folder and the data.js file are located inside the github repo : [Github repo](https://github.com/MakeSchool-Tutorials/ecommerce-tutorial-files)
+>
+> Navigate to the github link and download the repo as a zip file.
+>
+![Download zip](assets/02_displaying-moods_download-zip.png "Download zip")
 
-Now navigate to your resource folder.
+Now navigate to your resources folder.
 
 >[action]
-> Inside your resource folder, create another folder named `js`. This folder will hold all your .js files including javascript and JSON files.
+> Move the **images** folder that's located in the repo you've just downloaded into the **resources** folder. 
 >
-> Move the `data.js` file you downloaded to the `js` folder.  
+> Inside your resources folder, create another folder named `js`. This folder will hold all your .js files including javascript and JSON files.
+>
+> Move the `data.js` file located in the repo you've just downloaded to the `js` folder.  
 
 If you open your `data.js` file, you will see an array of JSON data.
 
@@ -65,7 +67,9 @@ Here are a few links to learn more about json objects.
 Now that we have a good understanding of JSON, we can better understand what the file we are looking at is. The ```data.js``` file contains an array of objects. Each object contains the data for each mood to be displayed. This data consists of **id, name, image, price** and **description** as a **key:value** pair.
 
 >[action]
-> Below our header element in our index.html file, let’s add another element called main. This will hold all the mood items.
+>Navigate to `index.html` file
+>
+> Below our header element in our `index.html` file, let’s add another element called **main**. This will hold all the mood items.
 >
 ```html
 <main class='items' id='items'>
@@ -110,7 +114,7 @@ If you open ```data.js``` and see the image **keys:values** pair, the values is 
 
 > [action]
 >
-> Now let’s loop over each element inside each object and display their images.
+> Now let’s loop over each element inside each object and display their images. This for-loop goes inside the `scripts.js` file. 
 >
 ```js
 for (let i=0; i<data.length; ++i) {
@@ -175,6 +179,18 @@ img.width = 300
 img.height = 300
 ```
 
+## Connecting `scripts.js` with `index.html`
+
+  Just like we connected our `css` file with our `index.html`, we also need to connect our `scripts.js` file with `index.html`.
+
+  > [action]Add this code right above the ending body tag (```</body>```) in `index.html`.
+  >
+
+  ```js
+  <script src='./resources/js/scripts.js' type="module">
+  </script>
+  ```
+
 ```console.log``` is a way to print our progress. Once we make the image, we are printing it to the console to see if it's being created. It is a good way to make sure if your code is working the way it's supposed to.
 
 >[action] On your browser, right click and select inspect element. Navigate to console. You should see image tags.
@@ -182,7 +198,7 @@ img.height = 300
 ![Console log img](assets/02_displaying-moods_console-log-img.png "Console log img")
 
 
-Now that we have created the image, we can append it to the `div` element we created. We want our result to be:
+Now that we have created the image, we can append it to the `div` element we created. We want our html result to be:
 
 ```html
 <div>
@@ -190,6 +206,8 @@ Now that we have created the image, we can append it to the `div` element we cre
 </div>
 ```
 
+To create the above code, we use `appendChild()` to append the image element into a div element. 
+Here's what the javascript code looks like:
 ```js
 newDiv.appendChild(img)
 ```
@@ -198,13 +216,13 @@ newDiv.appendChild(img)
 
 > [action]
 >
-> Now that we have the `div` with the image, let’s go ahead and append it to the main container, so that we could display it on our page.
+> Now that we have the `div` with the image, let’s go ahead and append it to the main container, so that we could display it on our page. This will be done in the `scripts.js` file.
 >
 ```js
 itemsContainer.appendChild(newDiv)
 ```
 
-Our code should look like this.
+Our javascript code should look like this at the end:
 
 ```js
 for (let i=0; i<data.length; ++i) {
@@ -254,7 +272,7 @@ newDiv.appendChild(price)
 
 If you open your browser, you should now be able to see something like this. 🎉🎊
 
-![Display without button](assets/03_displaying-moods_display-without-button.png "display without button")
+![Display without button](assets/04_displaying-moods_display-without-button.png "display without button")
 
 ## Stretch challenge:
 >[challenge]
@@ -340,7 +358,7 @@ for (let i=0; i<data.length; ++i) {
 
 Your page should now show each mood, with description, price and button.
 
-![Display with button](assets/04_displaying-moods_display-with-button.png "display with button")
+![Display with button](assets/05_displaying-moods_display-with-button.png "display with button")
 
 
 **Congrats! You have just learned how to display items dynamically using javascript.** 🎉🎊
