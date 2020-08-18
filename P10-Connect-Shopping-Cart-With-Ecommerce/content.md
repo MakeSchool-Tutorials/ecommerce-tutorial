@@ -46,7 +46,7 @@ in your console.
 
 # Writing inside the ul element
 
-We can use the property innerHTML to write in the ul tag.
+We can use the property `innerHTML` to write in the ul tag.
 
 > [action]
 > In your scripts.js file, right after you declared the itemList variable, add: 
@@ -79,7 +79,7 @@ Work on the challenges that were mentioned at the end of the video.
 Follow video 9 to display quantity of items
 
 ***Note***: 
-	In the video, to display the cart, the <div> and <ul> element goes into the <body> tag, but for our project, we’re going to put these elements inside the ```<footer> </footer>```
+	In the video, to display the cart, the <div> and <ul> element goes into the <body> tag, but for our project, we’re going to put these elements inside the ```<footer> </footer>``` element.
 
 
 ```html

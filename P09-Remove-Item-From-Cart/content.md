@@ -13,6 +13,8 @@ In this chapter there will be 2 videos that will guide you in:
 
 We will work on making the removeItem() function. 
 
+We are still working on the `scripts.js` file! 
+
 # 6th Video
 
 This video covers removing items from the cart. Here you will use the Array.splice() method.
@@ -21,6 +23,7 @@ This video covers removing items from the cart. Here you will use the Array.spli
 
 
 # 7th Video
+
 Here we will take another look at the remove item function and use a default parameter to remove all or just one item from the cart.
 
 ![ms-video-youtube](https://www.youtube.com/embed/GLxT2MCffAw)

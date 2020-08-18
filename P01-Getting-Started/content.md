@@ -11,7 +11,7 @@ Imagine if there was a place where you could go to and buy any type of mood you 
 Well guess what? We’re going to build that! Well… sort of.
 Join me as we go deep into the world of HTML, CSS and Javascript and build The Mood Shop!
 
-***Add a screenshot of the end product***
+![End product](assets/02_getting-started_items-display.png "End product")
 
 # Why Is This Important
 

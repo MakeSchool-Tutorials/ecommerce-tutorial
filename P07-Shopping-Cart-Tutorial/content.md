@@ -9,7 +9,6 @@ This chapter along with the remaining chapters will guide you through how to mak
 
 # Adding Items to Cart
 
-Our cart 
 Our shopping cart will be located in the footer of our ecommerce page.
 
 We will add a footer element in our html. 
