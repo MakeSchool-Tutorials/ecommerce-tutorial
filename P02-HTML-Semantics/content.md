@@ -57,13 +57,15 @@ The ```<body>``` element contains all the contents of an HTML document, such as 
 
 Let’s start by displaying ‘Hello World’ in our browser.
 
-> [action] In `index.html`, add a paragraph tag (```<p>```) inside the body tag. Inside the paragraph tag, write, Hello World!
-
+> [action]
+>
+> In `index.html`, add a paragraph tag (```<p>```) inside the body tag. Inside the paragraph tag, write, Hello World!
+>
 ```html
 <p> Hello World </p>
  ```
-
-> [action] open your file in the browser now. Let's assume you're using Chrome. Do open the file in your browser, follow the steps below:
+>
+> open your file in the browser now. Let's assume you're using Chrome. Do open the file in your browser, follow the steps below:
 >
 > 1. Choose File from the Chrome ribbon menu.
 > 1. Then select Open File.
@@ -72,7 +74,7 @@ Let’s start by displaying ‘Hello World’ in our browser.
 >
 > You should see ‘Hello World’.
 
-Congratulations!🎉 You just displayed text in your browser.
+Congratulations! 🎉 You just displayed text in your browser.
 
 > [action] save and push your progress on github
 >

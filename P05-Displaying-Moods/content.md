@@ -13,10 +13,11 @@ The first thing we need are the images to display for each mood.
 
 The next thing we will need to do is get the json data that holds all the information about each mood including the name, image url, description and price.
 
-The json data that we will be using is located in data.js file.
+The json data that we will be using is located in `data.js` file.
 
 >[action]
-> Both the images folder and the data.js file are located inside the github repo : [Github repo](https://github.com/MakeSchool-Tutorials/ecommerce-tutorial-files)
+>
+> Both the images folder and the data.js file are located inside this Github repo : [ecommerce-tutorial-files](https://github.com/MakeSchool-Tutorials/ecommerce-tutorial-files)
 >
 > Navigate to the github link and download the repo as a zip file.
 >
@@ -25,9 +26,10 @@ The json data that we will be using is located in data.js file.
 Now navigate to your resources folder.
 
 >[action]
-> Move the **images** folder that's located in the repo you've just downloaded into the **resources** folder. 
 >
-> Inside your resources folder, create another folder named `js`. This folder will hold all your .js files including javascript and JSON files.
+> Move the **images** folder that's located in the repo you've just downloaded into the **resources** folder.
+>
+> Inside your `resources` folder, create another folder named `js`. This folder will hold all your .js files including javascript and JSON files.
 >
 > Move the `data.js` file located in the repo you've just downloaded to the `js` folder.  
 
@@ -52,21 +54,25 @@ const data = [{
 
 # What exactly is a JSON data? 🤔
 
-AKA Java Script Object Notation
+AKA JavaScript Object Notation
 
-A JSON object contains data in the form of key/value pair
-The key and value pairs are separated by a colon(:). Located left of the colon is the key and on the right is it’s value.
+A JSON object contains data in the form of key/value pairs:
 
-Here are a few links to learn more about json objects.
+- The key and value pairs are separated by a colon(:)
+- Located left of the colon is the key, and on the right is it’s value.
 
-[Intro to JSON](https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/) - the first few chapters gives a good introduction to JSON
-
-[JSON example](https://www.javatpoint.com/json-example),
-[JSON short Tutorial](https://restfulapi.net/introduction-to-json/)
+> [info]
+>
+> Here are a few links to learn more about json objects.
+>
+> - [Intro to JSON](https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/) - the first few chapters gives a good introduction to JSON
+> - [JSON example](https://www.javatpoint.com/json-example),
+> - [JSON short Tutorial](https://restfulapi.net/introduction-to-json/)
 
 Now that we have a good understanding of JSON, we can better understand what the file we are looking at is. The ```data.js``` file contains an array of objects. Each object contains the data for each mood to be displayed. This data consists of **id, name, image, price** and **description** as a **key:value** pair.
 
 >[action]
+>
 >Navigate to `index.html` file
 >
 > Below our header element in our `index.html` file, let’s add another element called **main**. This will hold all the mood items.
@@ -86,7 +92,7 @@ We will be using javascript to dynamically display all the items for the mood sh
 >
 > Open the `scripts.js` folder. First we need to get the reference to the containers where all the items will be in.
 
-All items will be in the main tag. The main tag has an id of `items`. We can get this element using its id name. In order to do this, we can use the `document.getElementbyID` function. Then pass the function the id name of the element.
+All items will be in the main tag. The main tag has an id of `items`. We can get this element using its id name. In order to do this, we can use the `document.getElementbyID` function. Then pass the id of the element to the function.
 
 >[action]
 >
@@ -104,28 +110,33 @@ We also need to import the json file into the ```script.js```.
 
 Now that we have access to the json array, we can loop through the array and make image elements out of it.
 
-If you open ```data.js``` and see the image **keys:values** pair, the values is a reference to the source file of corresponding mood gifs located in the images folder. We will be using these values in the img src tag to display the images.
+If you open ```data.js``` and see the image **key:value** pairs, the values are a reference to the source file of corresponding mood gifs located in the images folder. We will be using these values in the `img` `src` tag to display the images.
 
 > [info]
 >
-> [How to create an element in javascript](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+> For those curious - [How to create an element in javascript](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 
 <!--  -->
 
 > [action]
 >
-> Now let’s loop over each element inside each object and display their images. This for-loop goes inside the `scripts.js` file. 
+> Now let’s loop over each element inside each object and display their images. This for-loop goes inside the `scripts.js` file.
 >
 ```js
+// the length of our data determines how many times this loop goes around
 for (let i=0; i<data.length; ++i) {
+    // create a new div element and give it a class name
     let newDiv = document.createElement('div');
  	newDiv.className = 'item'
 >
- 	// display the image
+ 	// create an image element
     let img = document.createElement('img');
+    // this will change each time we go through the loop. Can you explain why?
     img.src = data[i].image
     img.width = 300
     img.height = 300
+>
+    // Add the image to the div
     newDiv.appendChild(img)
     console.log(img)
 }
@@ -165,14 +176,8 @@ We can create the image tag using ```document.createElement(‘img’)```
 let img = document.createElement('img');
 ```
 
->[info]
-> Each attribute that we want to add to the image could be added using ```img.attributeName```
+Each attribute that we want to add to the image could be added using ```img.attributeName```, which is how we added the src, width and height of the image:
 
-<!--  -->
-
->[action]
-> Add the src, width and height of the image.
->
 ```js
 img.src = data[i].image
 img.width = 300
@@ -183,9 +188,10 @@ img.height = 300
 
   Just like we connected our `css` file with our `index.html`, we also need to connect our `scripts.js` file with `index.html`.
 
-  > [action]Add this code right above the ending body tag (```</body>```) in `index.html`.
+  > [action]
   >
-
+  > Add this code right above the ending body tag (```</body>```) in `index.html`.
+  >
   ```js
   <script src='./resources/js/scripts.js' type="module">
   </script>
@@ -193,10 +199,11 @@ img.height = 300
 
 ```console.log``` is a way to print our progress. Once we make the image, we are printing it to the console to see if it's being created. It is a good way to make sure if your code is working the way it's supposed to.
 
->[action] On your browser, right click and select inspect element. Navigate to console. You should see image tags.
-
-![Console log img](assets/02_displaying-moods_console-log-img.png "Console log img")
-
+>[action]
+>
+> On your browser, right click and select inspect element. Navigate to console. You should see image tags.
+>
+> ![Console log img](assets/03_displaying-moods_console-log-img.png "Console log img")
 
 Now that we have created the image, we can append it to the `div` element we created. We want our html result to be:
 
@@ -206,8 +213,9 @@ Now that we have created the image, we can append it to the `div` element we cre
 </div>
 ```
 
-To create the above code, we use `appendChild()` to append the image element into a div element. 
+To create the above code, we use `appendChild()` to append the image element into a div element.
 Here's what the javascript code looks like:
+
 ```js
 newDiv.appendChild(img)
 ```
@@ -225,17 +233,23 @@ itemsContainer.appendChild(newDiv)
 Our javascript code should look like this at the end:
 
 ```js
+// the length of our data determines how many times this loop goes around
 for (let i=0; i<data.length; ++i) {
-let newDiv = document.createElement('div');
+    // create a new div element and give it a class name
+    let newDiv = document.createElement('div');
  	newDiv.className = 'item'
-  // display the image
-  let img = document.createElement('img');
-  img.src = data[i].image
-  img.width = 300
-  img.height = 300
-  newDiv.appendChild(img)
-  // put new div inside items container
-  itemsContainer.appendChild(newDiv)
+
+ 	// create an image element
+    let img = document.createElement('img');
+    // this will change each time we go through the loop. Can you explain why?
+    img.src = data[i].image
+    img.width = 300
+    img.height = 300
+
+    // Add the image to the div
+    newDiv.appendChild(img)
+    // put new div inside items container
+    itemsContainer.appendChild(newDiv)
 }
 ```
 
@@ -245,7 +259,7 @@ let newDiv = document.createElement('div');
 >
 > ***Hint***: After you create the element, use ```element.InnerText``` to add the text description and price.
 >
-> This is what we want our js to make.
+> This is what we want our js to make:
 >
 ```html
 <div>
@@ -262,9 +276,13 @@ Solution to the above is here, but try it on your own first!
 >[solution]  
 >
 ``` js
+// create a paragraph element for a description
 let desc = document.createElement('P')
+// give the paragraph text from the data
 desc.innerText =data[i].desc
+// append the paragraph to the div
 newDiv.appendChild(desc)
+// do the same thing for price
 let price = document.createElement('P')
 price.innerText = data[i].price
 newDiv.appendChild(price)
@@ -308,9 +326,9 @@ There needs to be a way to access the price of each Mood when their “Add to Ca
 
 We will use a ***custom data attribute*** to store the price for each mood on the button. 💡
 
-[data- attributes](https://www.w3schools.com/tags/att_data-.asp)
-
-[custom data attributes](http://html5doctor.com/html5-custom-data-attributes/)
+> [info]
+>
+> Read up on [data- attributes](https://www.w3schools.com/tags/att_data-.asp) and [custom data attributes](http://html5doctor.com/html5-custom-data-attributes/)
 
 Here's an example of the code we would use to achieve this:
 
@@ -323,7 +341,7 @@ newDiv.appendChild(button)
 
 > [action]
 >
-> At this point, our for loop should create image, description, price and 'Add to Cart' button for each mood in the data array. Make sure it matches the following:
+> At this point, our for loop should create image, description, price and an 'Add to Cart' button for each mood in the data array. Make sure it matches the following:
 >
 ```js
 for (let i=0; i<data.length; ++i) {
@@ -346,8 +364,8 @@ for (let i=0; i<data.length; ++i) {
   let button = document.createElement('button')
   button.id = data[i].name
 >
-  // creates a custom attribute called data-price.   That will hold price for each element
-  // in the button
+  // creates a custom attribute called data-price.
+  // That will hold the price for each element in the button
   button.dataset.price = data[i].price
   button.innerHTML = "Add to Cart"
   newDiv.appendChild(button)

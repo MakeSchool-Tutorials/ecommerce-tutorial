@@ -3,19 +3,19 @@ title: "Shopping Cart Features"
 slug: shopping-cart-features
 ---
 
-In this last chapter, we will be finishing up the shopping cart functionality. 
+In this last chapter, we will be finishing up the shopping cart functionality.
 
 So far our cart has been connected with the e-commerce page and 'Add to cart' buttons attached to each items.
 
-It would also be nice if we can update the quantity of selected item, and remove an item from our cart. 
+It would also be nice if we can update the quantity of selected item, and remove an item from our cart.
 
 # Adding “Remove items” button to our Shopping Cart
 
 ## 11th Video (Start from 2:25 - end)
 
-Follow this video starting at 2:25 implement "Remove items" button to our shopping cart. Here you will create a remove item button for each item displayed in the cart.
+Follow this video **starting at 2:25** implement "Remove items" button to our shopping cart. Here you will create a remove item button for each item displayed in the cart.
 
-At the start the video is slightly different but you will be implementing the same functionality throughout the video. 
+At the start the video is slightly different but you will be implementing the same functionality throughout the video.
 
 ![ms-video-youtube](https://www.youtube.com/embed/l2M5q2te234)
 
@@ -28,7 +28,7 @@ Here we'll add a button to remove one item from the cart.
 ![ms-video-youtube](https://www.youtube.com/embed/SjV6pdFV6aI)
 
 
-# Updating items in shopping cart 
+# Updating items in shopping cart
 
 ## 13th Video
 Here you will add an input that allows you to set the number of items in the cart. To do this you'll listen for an on change event.
@@ -48,11 +48,13 @@ Now our page should look like this:
 > - Style all the buttons inside the shopping cart (CSS)
 > - Remove the dots on the list of items in the shopping cart (CSS)
 > - Customize your ecommerce site by changing the theme of the navbar, body and footer (CSS)
-> - In the navbar, there is a link called 'cart'. Currently if you click on it, it doesn’t do anything. Connect the link to the shopping cart so that when a user clicks on cart, it takes them to the footer where the cart is located. 
+> - In the navbar, there is a link called 'cart'. Currently if you click on it, it doesn’t do anything. Connect the link to the shopping cart so that when a user clicks on cart, it takes them to the footer where the cart is located.
 
 
 
 # Feedback and Review - 2 minutes
+
+**If you haven't filled out the tutorial survey, please do so now!**
 
 **We promise this won't take longer than 2 minutes!**
 

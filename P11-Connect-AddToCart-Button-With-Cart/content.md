@@ -10,7 +10,7 @@ the cart!
 
 > [action]
 >
-> Navigate to your scripts.js file.
+> Navigate to your `scripts.js` file.
 > We will write this code below the for loop you wrote to display items in the page,
 >
 
@@ -20,77 +20,86 @@ The first thing we need to do is get all the buttons from the page. Currently al
 
 To select all buttons, we will use the ```document.querySelectorAll``` function.
 
-This function gives you all the element in the document that matches the query. 
+This function gives you all the elements in the document that matches the query.
 
-***For example***: if we pass ```document.querySelectorAll(‘button’)```, we will get a node list of all the buttons in our document/page. 
+**For example**: if we pass ```document.querySelectorAll(‘button’)```, we will get a node list of all the buttons in our document/page.
 
-To learn more about ```document.querySelectorAll``` : 
+> [info]
+>
+> To learn more about ```document.querySelectorAll``` :
 [querySelectorAll info](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
 
+<!--  -->
 
 > [action]
 >
-> Use querySelectorAll to select all buttons and assign it to a variable named all_items_button
+> Use `querySelectorAll` to select all buttons and assign it to a variable named `all_items_button`
 >
-
 ```js
 const all_items_button = document.querySelectorAll(“button”)
 ```
 
-If we print **_all_items_button** to our console, we’ll see that this gives us a node list of all the buttons in the
-document. 
+If we print `_all_items_button` to our console, we’ll see that this gives us a node list of all the buttons in the document.
 
 ![Node list of buttons](assets/01_connect-addtocart_nodeList-buttons.png "Node list of buttons")
 
-We need to convert this into an array. This will make it easier to loop through each button and assign it the addItem function. 
+We need to convert this into an array. This will make it easier to loop through each button and assign it the `addItem` function.
+
+> [info]
+> Check out more on [Array.from info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+
+<!--  -->
 
 > [action]
-> Use Array.from to convert the node lists into an array
->
-
-[Array.from info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
-
-> [action]
-> Modify the variable all_items_button
+> Modify the variable `all_items_button` using `Array.from` to convert the node lists into an array:
 >
 ```js
 const all_items_button = Array.from(document.querySelectorAll("button"))
 ```
 
-If you check your console again, you should see array instead of lists. 
+If you check your console again, you should see array instead of lists.
 
 ![Array list of buttons](assets/02_connect-addtocart_arrayList-buttons.png "Array list of buttons")
 
-Now that we have access to all the buttons, we can connect it to the addItem() and showItems() function when the button is clicked. 
+Now that we have access to all the buttons, we can connect it to the `addItem()` and `showItems()` function when the button is clicked.
 
-We’ll use another for loop to
+We’ll use another `for` loop to
 
- 1. loop through the buttons 
+ 1. loop through the buttons
  1. check if it’s clicked or not
- 1. if clicked, add the item to the cart. 
+ 1. if clicked, add the item to the cart.
 
 # Adding event listener
 
-[Event listener info](https://www.w3schools.com/jsref/met_element_addeventlistener.asp)
+> [info]
+>
+> More info on how to add an [Event listener](https://www.w3schools.com/jsref/met_element_addeventlistener.asp)
 
 We’ll add an event listener for each button, to listen to a click event.
 
-The event listener takes 2 parameters: an event and a callback function.
+The event listener takes 2 parameters:
 
-Here our event is a click event, and our callback function will be to add the clicked item to the shopping cart. 
+1. an event
+1. a callback function
 
-We'll use addItem() and once the item gets added, call showItems() function to rerun the showItem() to include the added item in the footer. 
+Here our event is a click event, and our callback function will be to add the clicked item to the shopping cart.
 
-The addItem function takes 2 arguments, which are **name** and **price**. 
+We'll use `addItem()` and once the item gets added, call `showItems()` function to rerun the `showItem()` to include the added item in the footer.
+
+The `addItem` function takes 2 arguments, which are **name** and **price**.
 
 We’ll get the name of the item from the **button id** and the price from the custom attribute **data-price**.
 
-We’ll use getAttribute function to get the attributes id and data-price.
+We’ll use `getAttribute` function to get the attributes id and data-price.
 
-[getAttribute info](https://www.w3schools.com/jsref/met_element_getattribute.asp)
+> [info]
+>
+> More info on [getAttribute](https://www.w3schools.com/jsref/met_element_getattribute.asp)
+
+<!--  -->
 
 > [action]
-> add this for Each loop below your all_items_button declaration
+> add this for Each loop below your `all_items_button` declaration
 >
 ```js
 all_items_button.forEach(elt => elt.addEventListener('click', () => {
@@ -99,11 +108,11 @@ all_items_button.forEach(elt => elt.addEventListener('click', () => {
 }))
 ```
 
-Now refresh your browser and try adding some items to your shopping cart by clicking on any of the ‘Add to Cart’ buttons. 
+Now refresh your browser and try adding some items to your shopping cart by clicking on any of the ‘Add to Cart’ buttons.
 
 ![Button connected with cart](assets/03_connect-addtocart_cart-connected.png "button connected with cart")
 
-Woo hoo!! 🎉🎊 Our cart is finally connected with the “Add to Cart” button!! 
+Woo hoo!! 🎉🎊 Our cart is finally connected with the “Add to Cart” button!!
 
 # Update progress on Github
 > [action]

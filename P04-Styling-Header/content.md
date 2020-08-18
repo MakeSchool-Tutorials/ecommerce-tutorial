@@ -6,7 +6,7 @@ slug: styling-header
 ## Styling the header
 Currently, our header and navbar don’t really look like a header or navbar at the moment. We need to add some styles to it.
 
->[action] Navigate to your project root folder and create a new folder named resources.
+>[action] Navigate to your project root folder and create a new folder named `resources`.
 >
 ```bash
 mkdir resources
@@ -14,7 +14,7 @@ mkdir resources
 
 This folder will hold your css, javascript and image files.
 
->[action] Inside your resources folder, create another folder named css. Here you will store your css files.
+>[action] Inside your `resources` folder, create another folder named `css`. Here you will store your css files.
 >
 ```bash
 cd resources
@@ -48,7 +48,9 @@ We’re going to start by styling the **font family** and **font size**.
 
 **Font size** - 16 px.
 
->[action] Open your styles.css file and add the following line of code.
+>[action]
+>
+> Open your styles.css file and add the following line of code.
 >
 ```css
 body{
@@ -66,8 +68,9 @@ Hmm, we were expecting to see some change but don’t see any. 🤔
 Can you guess why?
 
 > [solution]
+>
 > That’s because we haven’t linked our stylesheet in our HTML file.
-We need to use ```<link>``` tag inside the ```<head>``` element to link our css file.
+We need to use a ```<link>``` tag inside the ```<head>``` element to link our css file.
 
 <!--  -->
 
@@ -88,7 +91,9 @@ We want our website name to be on the left side and the navigation links (Home, 
 Flexbox helps to position elements inside a container.
 We set flex properties on the parent element (container) to make elements inside the container move.
 
-To learn more about flexbox : [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
+> [info]
+>
+> To learn more about flexbox: [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
 
 The flex container becomes flexible by setting the **display** property to flex.
 
@@ -100,7 +105,9 @@ we use dot (.) before the name when referring to class names in css files.
 
 For example:  **.page-header**
 
->[action] Inside your `styles.css` file, add the styles for page-header.
+>[action]
+>
+> Inside your `styles.css` file, add the styles for page-header.
 >
 ```css
 .page-header {
@@ -120,7 +127,7 @@ This will select ```<ul>``` elements inside the page-header class.
 
 <!--  -->
 
->[action] Add this code to style the navbar lists.
+>[action] Inside your `styles.css` file, add this code to style the navbar lists.
 >
 ```css
 .page-header ul{
@@ -133,7 +140,7 @@ This will select ```<ul>``` elements inside the page-header class.
 
 To remove the bullet points in each list, we can set the property list-style to none in the ```<ul>``` tag.
 
->[action] Modify your **.page-header ul**
+>[action] Modify your **.page-header ul** rule in `styles.css`
 >
 ```css
 .page-header ul{
@@ -172,6 +179,6 @@ git push
 # Stretch Challenge
 
 > [challenge]
-> - Change the background color of the navbar
 >
+> - Change the background color of the navbar
 > - Customize the navbar by changing the font size and font family to your desired choice.
