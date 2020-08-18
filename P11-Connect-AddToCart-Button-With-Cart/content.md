@@ -11,7 +11,6 @@ the cart!
 > [action]
 >
 > Navigate to your `scripts.js` file.
-> We will write this code below the for loop you wrote to display items in the page,
 >
 
 # Using querySelectorAll function
@@ -34,6 +33,8 @@ This function gives you all the elements in the document that matches the query.
 > [action]
 >
 > Use `querySelectorAll` to select all buttons and assign it to a variable named `all_items_button`
+>
+> Add this code below the for loop you wrote to display items in the page
 >
 ```js
 const all_items_button = document.querySelectorAll(“button”)
@@ -84,13 +85,13 @@ The event listener takes 2 parameters:
 
 Here our event is a click event, and our callback function will be to add the clicked item to the shopping cart.
 
-We'll use `addItem()` and once the item gets added, call `showItems()` function to rerun the `showItem()` to include the added item in the footer.
+We'll use `addItem()` and once the item gets added, call `showItems()` function to rerun the `showItems()` to include the added item in the footer.
 
 The `addItem` function takes 2 arguments, which are **name** and **price**.
 
 We’ll get the name of the item from the **button id** and the price from the custom attribute **data-price**.
 
-We’ll use `getAttribute` function to get the attributes id and data-price.
+We’ll use `getAttribute` function to get the attributes `id` and `data-price`.
 
 > [info]
 >
@@ -99,7 +100,7 @@ We’ll use `getAttribute` function to get the attributes id and data-price.
 <!--  -->
 
 > [action]
-> add this for Each loop below your `all_items_button` declaration
+> Inside your `scripts.js` file, add this for Each loop below your `all_items_button` variable
 >
 ```js
 all_items_button.forEach(elt => elt.addEventListener('click', () => {
