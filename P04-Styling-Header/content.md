@@ -48,7 +48,7 @@ We’re going to start by styling the **font family** and **font size**.
 
 **Font size** - 16 px.
 
->[action] Add the following line of code to your styles.css file
+>[action] Open your styles.css file and add the following line of code.
 >
 ```css
 body{
@@ -71,7 +71,7 @@ We need to use ```<link>``` tag inside the ```<head>``` element to link our css 
 
 <!--  -->
 
->[action] inside the ```<head>``` element of your `index.html`, add the ```<link>``` element.
+>[action] Navigate to `index.html`. Inside the ```<head>``` element of your `index.html`, add the ```<link>``` element.
 >
 ```html
 <link rel='stylesheet' href='./resources/css/styles.css'>
@@ -82,8 +82,6 @@ We need to use ```<link>``` tag inside the ```<head>``` element to link our css 
 Sweet! We see some font change!
 
 We want our website name to be on the left side and the navigation links (Home, about, cart) to be on the other side. For this, we will use **flexbox layout**.
-
-![Navbar Example](assets/01_styling-header_navbar-example.png "Navbar example")
 
 # What is flexbox?
 
@@ -159,6 +157,8 @@ To remove the bullet points in each list, we can set the property list-style to 
 }
 ```
 
+![Navbar Example](assets/01_styling-header_navbar-example.png "Navbar example")
+
 Congrats! You have just made a decent looking navbar using CSS.
 
 Now is a good time to update your progress on Github.
@@ -169,10 +169,9 @@ git commit -m ‘styled the header and navbar’
 git push
 ```
 
-
 # Stretch Challenge
 
 > [challenge]
-> Change the background color of the navbar
+> - Change the background color of the navbar
 >
-> Customize the navbar by changing the font size and font family to your desired choice.
+> - Customize the navbar by changing the font size and font family to your desired choice.

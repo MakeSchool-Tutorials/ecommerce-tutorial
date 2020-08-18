@@ -25,7 +25,10 @@ Since we will be using lists of navigation, we will have a list tag.
 
 The ```<ul>``` tag defines an unordered (bulleted) list.
 
->[action] Use the ```<ul>``` tag together with the ```<li>``` tag to create unordered lists.
+>[action] 
+> Inside your ```index.html```, delete the ```<p>``` tag that contains 'Hello World' ,and instead add the header element along with the navbar containing the 3 links as below. 
+>
+> Use the ```<ul>``` tag together with the ```<li>``` tag to create unordered lists.
 >
 >  Instead of copying and pasting the given code, type it out. This will give you more practice. 🤓
 >
