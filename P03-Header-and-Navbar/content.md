@@ -25,6 +25,8 @@ Since we will be using lists of navigation, we will have a list tag.
 
 The ```<ul>``` tag defines an unordered (bulleted) list.
 
+# Adding the Header
+
 >[action]
 >
 > Inside your ```index.html```, delete the ```<p>``` tag that contains 'Hello World' ,and instead add the header element along with the navbar containing the 3 links as below.
@@ -53,6 +55,8 @@ The ```<ul>``` tag defines an unordered (bulleted) list.
 Yay! You should see the name of your site, **The Mood Shop**, and 3 links.
 
 ![Navbar No style](assets/01_header-navbar_unstyled-navbar.png "Navbar no style")
+
+# Update Progress on Github
 
 >[action] Now is a great time to commit your progress.
 >

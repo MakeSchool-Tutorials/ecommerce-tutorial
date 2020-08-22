@@ -47,7 +47,7 @@ Now our page should look like this:
 > - Style the shopping cart (CSS)
 > - Style all the buttons inside the shopping cart (CSS)
 > - Remove the dots on the list of items in the shopping cart (CSS)
-> - Customize your ecommerce site by changing the theme of the navbar, body and footer (CSS)
+> - Customize your Mood Shop by changing the theme of the navbar, body and footer (CSS)
 > - In the navbar, there is a link called 'cart'. Currently if you click on it, it doesn’t do anything. Connect the link to the shopping cart so that when a user clicks on cart, it takes them to the footer where the cart is located.
 
 
@@ -75,4 +75,4 @@ git commit -m ‘cart fully functional’
 git push
 ```
 
-**CONGRATS on completing the ecommerce tutorial!** You should now have a better understanding on how to use HTML, CSS, and JS together!
+**CONGRATS on completing the Mood Shop tutorial!** You should now have a better understanding on how to use HTML, CSS, and JS together!

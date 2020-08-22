@@ -118,6 +118,8 @@ If you open ```data.js``` and see the image **key:value** pairs, the values are 
 
 <!--  -->
 
+# Creating the for-loop
+
 > [action]
 >
 > Now let’s loop over each element inside each object and display their images. This for-loop goes inside the `scripts.js` file.
@@ -381,7 +383,7 @@ Your page should now show each mood, with description, price and button.
 
 **Congrats! You have just learned how to display items dynamically using javascript.** 🎉🎊
 
-We have one more chapter to go to tie it all together!
+# Update progress on Github
 
 > [action]
 >

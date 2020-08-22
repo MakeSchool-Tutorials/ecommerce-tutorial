@@ -7,17 +7,17 @@ slug: html-semantics
 In this Chapter we will be using:
 	**HTML** and **CSS**
 
-# What is HTML?
+## What is HTML?
 
 HTML is short for "HyperText Markup Language". That may sound scary, but it simply means it is a language for describing web-pages using ordinary text.
 
-# What is an HTML tag?
+## What is an HTML tag?
 
 HTML tags are the hidden keywords within a web page that define how your web browser must format and display the content.
 
 Most tags must have two parts, an opening and a closing part. For example, **```<html>```** is the opening tag and **```</html>```** is the closing tag. Note that the closing tag has the same text as the opening tag, but has an additional forward-slash ( / ) character.
 
-# What are tag attributes?
+## What are tag attributes?
 
 Attributes allow you to customize a tag, and are defined within the opening tag, for example:
 `<img src="image1.jpg">` or `<p align="center"> ... </p>`
@@ -75,6 +75,8 @@ Let’s start by displaying ‘Hello World’ in our browser.
 > You should see ‘Hello World’.
 
 Congratulations! 🎉 You just displayed text in your browser.
+
+# Update progress on Github
 
 > [action] save and push your progress on github
 >

@@ -168,6 +168,8 @@ To remove the bullet points in each list, we can set the property list-style to 
 
 Congrats! You have just made a decent looking navbar using CSS.
 
+# Update progress on Github
+
 Now is a good time to update your progress on Github.
 
 ```bash
