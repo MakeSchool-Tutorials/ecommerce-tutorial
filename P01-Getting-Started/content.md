@@ -58,6 +58,7 @@ cd mood-shop
 ```
 >
 > create an index.html file
+>
 ```bash
 touch index.html
 ```
