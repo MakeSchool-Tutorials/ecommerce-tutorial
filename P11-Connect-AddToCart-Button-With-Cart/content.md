@@ -4,19 +4,19 @@ slug: connect-add-to-cart-button-with-shopping-cart
 ---
 
 Now that we can show the shopping cart in the footer of our page, the next
-step would be to connect our ‘Add to Cart’ buttons on the items to the cart.
-This way, when a user clicks on ‘Add to Cart’, the item will be displayed inside
+step would be to connect our 'Add to Cart' buttons on the items to the cart.
+This way, when a user clicks on 'Add to Cart', the item will be displayed inside
 the cart!
 
 # Using querySelectorAll function
 
-The first thing we need to do is get all the buttons from the page. Currently all the buttons on our page are the ‘Add to Cart’ buttons.
+The first thing we need to do is get all the buttons from the page. Currently all the buttons on our page are the 'Add to Cart' buttons.
 
 To select all buttons, we will use the ```document.querySelectorAll``` function.
 
 This function gives you all the elements in the document that matches the query.
 
-**For example**: if we pass ```document.querySelectorAll(‘button’)```, we will get a node list of all the buttons in our document/page.
+**For example**: if we pass ```document.querySelectorAll('button')```, we will get a node list of all the buttons in our document/page.
 
 > [info]
 >
@@ -32,10 +32,10 @@ This function gives you all the elements in the document that matches the query.
 > Navigate to your `scripts.js` file. Add this code below the for loop you wrote to display items in the page
 >
 ```js
-const all_items_button = document.querySelectorAll(“button”)
+const all_items_button = document.querySelectorAll("button")
 ```
 
-If we print `all_items_button` to our console, we’ll see that this gives us a node list of all the buttons in the document.
+If we print `all_items_button` to our console, we'll see that this gives us a node list of all the buttons in the document.
 
 ![Node list of buttons](assets/01_connect-addtocart_nodeList-buttons.png "Node list of buttons")
 
@@ -59,10 +59,10 @@ If you check your console again, you should see array instead of lists.
 
 Now that we have access to all the buttons, we can connect it to the `addItem()` and `showItems()` function when the button is clicked.
 
-We’ll use another `for` loop to
+We'll use another `for` loop to
 
  1. loop through the buttons
- 1. check if it’s clicked or not
+ 1. check if it's clicked or not
  1. if clicked, add the item to the cart.
 
 # Adding event listener
@@ -71,7 +71,7 @@ We’ll use another `for` loop to
 >
 > More info on how to add an [Event listener](https://www.w3schools.com/jsref/met_element_addeventlistener.asp)
 
-We’ll add an event listener for each button, to listen to a click event.
+We'll add an event listener for each button, to listen to a click event.
 
 The event listener takes 2 parameters:
 
@@ -84,9 +84,9 @@ We'll use `addItem()` and once the item gets added, call `showItems()` function 
 
 The `addItem` function takes 2 arguments, which are **name** and **price**.
 
-We’ll get the name of the item from the **button id** and the price from the custom attribute **data-price**.
+We'll get the name of the item from the **button id** and the price from the custom attribute **data-price**.
 
-We’ll use `getAttribute` function to get the attributes `id` and `data-price`.
+We'll use `getAttribute` function to get the attributes `id` and `data-price`.
 
 > [info]
 >
@@ -105,11 +105,11 @@ all_items_button.forEach(elt => elt.addEventListener('click', () => {
 }))
 ```
 
-Now refresh your browser and try adding some items to your shopping cart by clicking on any of the ‘Add to Cart’ buttons.
+Now refresh your browser and try adding some items to your shopping cart by clicking on any of the 'Add to Cart' buttons.
 
 ![Button connected with cart](assets/03_connect-addtocart_cart-connected.png "button connected with cart")
 
-Woo hoo!! 🎉🎊 Our cart is finally connected with the “Add to Cart” button!!
+Woo hoo!! 🎉🎊 Our cart is finally connected with the "Add to Cart" button!!
 
 # Update progress on Github
 > [action]
@@ -118,6 +118,6 @@ Woo hoo!! 🎉🎊 Our cart is finally connected with the “Add to Cart” butt
 >
 ```bash
 git add .
-git commit -m ‘add button connected to cart’
+git commit -m 'add button connected to cart'
 git push
 ```

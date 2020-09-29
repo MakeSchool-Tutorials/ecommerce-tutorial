@@ -26,9 +26,9 @@ For the **p** tag the attribute **align** defines how the paragraph will align o
 To learn more about HTML tags click on this link : [HTML tags](http://www.simplehtmlguide.com/whatishtml.php)
 
 
-# Let’s start by making the landing (shopping) page for our website.
+# Let's start by making the landing (shopping) page for our website.
 
-First, let’s have the basic outline/boilerplate for HTML.
+First, let's have the basic outline/boilerplate for HTML.
 
 You can learn more about the outline here: [HTML template](https://www.sitepoint.com/a-basic-html5-template/)
 
@@ -45,7 +45,7 @@ You can learn more about the outline here: [HTML template](https://www.sitepoint
 </html>
 ```
 
-The first line, ```<!DOCTYPE>``` is called **Document Type Declaration**. It tells the browser what kind of document it’s looking at. In our case, it’s telling the browser that our document is an Html file.
+The first line, ```<!DOCTYPE>``` is called **Document Type Declaration**. It tells the browser what kind of document it's looking at. In our case, it's telling the browser that our document is an Html file.
 
 Next is the ```<html>``` tag which contains the head tag and body tag.
 
@@ -55,7 +55,7 @@ The ```<body>``` element contains all the contents of an HTML document, such as 
 
 # Displaying our 'Hello World'
 
-Let’s start by displaying ‘Hello World’ in our browser.
+Let's start by displaying 'Hello World' in our browser.
 
 > [action]
 >
@@ -72,7 +72,7 @@ Let’s start by displaying ‘Hello World’ in our browser.
 > 1. Navigate to your HTML file location, highlight the document and click Open.
 > 1. You will see your file open in a new tab.
 >
-> You should see ‘Hello World’.
+> You should see 'Hello World'.
 
 Congratulations! 🎉 You just displayed text in your browser.
 
@@ -82,6 +82,6 @@ Congratulations! 🎉 You just displayed text in your browser.
 >
 ```bash
 git add .
-git commit -m ‘displayed hello world’
+git commit -m 'displayed hello world'
 git push
 ```

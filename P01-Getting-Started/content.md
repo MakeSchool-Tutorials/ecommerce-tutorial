@@ -8,7 +8,7 @@ slug: getting-started
 
 Did you know your emotions can change how you taste food?  I think everyone agrees that they would want their foods to taste good! 🥗🍔🍕🍇😋
 Imagine if there was a place where you could go to and buy any type of mood you want.
-Well guess what? We’re going to build that! Well… sort of.
+Well guess what? We're going to build that! Well… sort of.
 Join me as we go deep into the world of HTML, CSS and Javascript and build The Mood Shop!
 
 ![End product](assets/02_getting-started_items-display.png "End product")
@@ -84,5 +84,5 @@ Now Go to GitHub and create a public repository called mood-shop, and now associ
 >
 ```bash
 $ git remote add origin GITHUB-REPO-URL
-$ git push origin master -u
+$ git push origin main -u
 ```

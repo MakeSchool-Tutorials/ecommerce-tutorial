@@ -42,7 +42,7 @@ Your page should now look something like this:
 
 ![Items display in grid](assets/02_styling-moods-display_items-display.png "Items Display in grid")
 
-Now all that’s left to do is style each item as a card.
+Now all that's left to do is style each item as a card.
 We can add a border on each div so it will look like a card.
 
 Earlier in Chapter 4, when we were making each `div` using the `for` loop, we gave it a class name of `item`. We can use this class name to style the `div`.
@@ -66,7 +66,7 @@ Now our page should look like this:
 
 >[challenge]
 >
-> - Make the “Add To Cart” button appear on the middle of each card
+> - Make the "Add To Cart" button appear on the middle of each card
 > - Give your button element a background color and some padding
 > - Style your button
 
@@ -87,6 +87,6 @@ This allows us to get feedback on how well the students are grasping the learnin
 >
 ```bash
 git add .
-git commit -m ‘styled items displayed using grid css’
+git commit -m 'styled items displayed using grid css'
 git push
 ```

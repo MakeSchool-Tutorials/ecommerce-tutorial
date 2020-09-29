@@ -9,7 +9,7 @@ So far our cart has been connected with the e-commerce page and 'Add to cart' bu
 
 It would also be nice if we can update the quantity of selected item, and remove an item from our cart.
 
-# Adding “Remove items” button to our Shopping Cart
+# Adding "Remove items" button to our Shopping Cart
 
 ## 11th Video (Start from 2:25 - end)
 
@@ -20,7 +20,7 @@ At the start the video is slightly different but you will be implementing the sa
 ![ms-video-youtube](https://www.youtube.com/embed/l2M5q2te234)
 
 
-# Adding “add one” and “remove one” buttons for each items inside shopping cart
+# Adding "add one" and "remove one" buttons for each items inside shopping cart
 
 ## 12th Video
 Here we'll add a button to remove one item from the cart.
@@ -48,7 +48,7 @@ Now our page should look like this:
 > - Style all the buttons inside the shopping cart (CSS)
 > - Remove the dots on the list of items in the shopping cart (CSS)
 > - Customize your Mood Shop by changing the theme of the navbar, body and footer (CSS)
-> - In the navbar, there is a link called 'cart'. Currently if you click on it, it doesn’t do anything. Connect the link to the shopping cart so that when a user clicks on cart, it takes them to the footer where the cart is located.
+> - In the navbar, there is a link called 'cart'. Currently if you click on it, it doesn't do anything. Connect the link to the shopping cart so that when a user clicks on cart, it takes them to the footer where the cart is located.
 
 
 
@@ -71,7 +71,7 @@ This allows us to get feedback on how well the students are grasping the learnin
 >
 ```bash
 git add .
-git commit -m ‘cart fully functional’
+git commit -m 'cart fully functional'
 git push
 ```
 
