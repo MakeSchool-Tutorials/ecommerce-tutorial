@@ -84,5 +84,5 @@ Now Go to GitHub and create a public repository called mood-shop, and now associ
 >
 ```bash
 $ git remote add origin GITHUB-REPO-URL
-$ git push origin master -u
+$ git push origin main -u
 ```
