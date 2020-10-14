@@ -6,17 +6,17 @@ slug: getting-started
 ## Overview
 ![Mood Gif](assets/01_getting-started_mood.gif "Mood Gif")
 
-Did you know your emotions can change how you taste food?  I think everyone agrees that they would want their foods to taste good! 🥗🍔🍕🍇😋
-Imagine if there was a place where you could go to and buy any type of mood you want.
-Well guess what? We’re going to build that! Well… sort of.
-Join me as we go deep into the world of HTML, CSS and Javascript and build The Mood Shop!
+Did you know your emotions can change how you taste food?  I think everyone agrees that they would want their foods to taste good! 
+
+🥗🍔🍕🍇😋 
+
+Imagine if there was a place where you could go to and buy any type of mood you want. Well guess what? We’re going to build that! Well… sort of. Join me as we go deep into the world of HTML, CSS and Javascript and build The Mood Shop!
 
 ![End product](assets/02_getting-started_items-display.png "End product")
 
 # Why Is This Important
 
 The web is the biggest software platform and growing. The foundation material covered in this tutorial is at the core of all web technologies. Having a strong foundation is important to becoming a strong developer. 💪💻
-
 
 # Prerequisites:
 
@@ -31,8 +31,6 @@ By the end of this tutorial, you should be able to...
 1. Using Flex Box, Grid, Font styles, Border styles to change the appearance of your web page
 1. Use JavaScript to create dynamic content and handle user interactions in your web applications
 1. Create variables, handle events on the web page, and write javascript functions
-
-
 
 # Using Git/GitHub
 
@@ -62,7 +60,6 @@ cd mood-shop
 ```bash
 touch index.html
 ```
-
 
 # Set Up Git/GitHub
 
