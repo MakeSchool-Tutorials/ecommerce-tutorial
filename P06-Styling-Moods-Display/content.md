@@ -30,37 +30,76 @@ We will use its class name to access main.
 >
 ```css
 .items {
+  width: 80%;
+  margin: auto;
+
   display: grid;
-  grid-template-columns: repeat(4, 120px);
-  grid-column-gap: 200px;
-  margin-left: 100px;
-  margin-top: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
 }
 ```
 
+These styles says that main.items should be 80% the width of it's parent (`width: 80%`) and centered since the margin on the left and right will be equal (`margin: auto`). It should arrange it's children in a grid (`display: grid`) and grid will have 4 equal sized columns (`grid-template-columns: repeat(4, 1fr)`) with a gap of 1em between columns and rows (`grid-gap: 1em`). 
+
+Earlier in Chapter 4, when we were making each `div` using the `for` loop, we gave it a class name of `item`. We can use this class name to style the `div`.
+
+Add another style to target each image in the items and size them to fit their grid cell.
+
+```CSS
+.items img {
+  width: 100%;
+  height: auto;
+}
+```
+
+This rule targets img tags inside of elements with the class name: item. it syas their width chould 100% (`width: 100%`) that makes the images match the width of .item, and height should stay proportional to the width (`height: auto`). 
+
 Your page should now look something like this:
 
-![Items display in grid](assets/02_styling-moods-display_items-display.png "Items Display in grid")
+![Items display in grid](assets/02_styling-moods-display_items-display.png)
 
 Now all that’s left to do is style each item as a card.
 We can add a border on each div so it will look like a card.
 
-Earlier in Chapter 4, when we were making each `div` using the `for` loop, we gave it a class name of `item`. We can use this class name to style the `div`.
+Add some styles of your own to customize the content of the grid cells. The contents are: 
 
->[action]
->
-> Add this to your `styles.css` file below the code you've written so far
->
-```css
-.item {
-  border: solid 1px;
-  width: 300px;
-  margin-top: 30px;
-}
+- image
+- description text 
+- price 
+- add to cart button
+
+You can target each of these using these selectors: 
+
+Style the entire card: 
+
+```CSS
+.item { ... }
 ```
-Now our page should look like this:
 
-![Items display](assets/01_styling-moods-display_items-display.png "Items Display")
+Style the image in the card: 
+
+```CSS
+.item img { ... }
+```
+
+Style style both paragraphs in the card. This would be the description and the price: 
+
+```CSS
+.item p { ... }
+```
+
+Target the first or the second paragraph in a card. The first p is the description and the second is the price: 
+
+```CSS
+.item p:nth-child(1) { ... }
+.item p:nth-child(2) { ... }
+```
+
+Style the add to cart button: 
+
+```CSS
+.item button { ... }
+```
 
 ## Stretch Challenge:
 
@@ -77,7 +116,6 @@ Now our page should look like this:
 Please take a moment to rate your understanding of the learning outcomes from this tutorial, and how we can improve it via our [tutorial feedback form](https://forms.gle/BrEWZioQ566MSXMH6)
 
 This allows us to get feedback on how well the students are grasping the learning outcomes, and tells us where we can improve the tutorial experience.
-
 
 # Update progress on Github
 
