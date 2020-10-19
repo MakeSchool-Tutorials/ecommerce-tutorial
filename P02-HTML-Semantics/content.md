@@ -3,9 +3,7 @@ title: "HTML Semantics"
 slug: html-semantics
 ---
 
-
-In this Chapter we will be using:
-	**HTML** and **CSS**
+In this Chapter we will be using: **HTML** and **CSS**
 
 ## What is HTML?
 
@@ -19,12 +17,7 @@ Most tags must have two parts, an opening and a closing part. For example, **```
 
 ## What are tag attributes?
 
-Attributes allow you to customize a tag, and are defined within the opening tag, for example:
-`<img src="image1.jpg">` or `<p align="center"> ... </p>`
-Here for **img** tag, the attribute is **src**, which defines where the source file of the image is located.
-For the **p** tag the attribute **align** defines how the paragraph will align on the browser.
-To learn more about HTML tags click on this link : [HTML tags](http://www.simplehtmlguide.com/whatishtml.php)
-
+Attributes allow you to customize a tag, and are defined within the opening tag, for example: `<img src="image1.jpg">` or `<p class="lead"> ... </p>`. Here for **img** tag, the attribute is **src**, which defines where the source file of the image is located. For the **p** tag the attribute **class** defines the name of the style group that should be applied to this elemwnt. To learn more about HTML tags click on this link : [HTML tags](http://www.simplehtmlguide.com/whatishtml.php)
 
 # Let's start by making the landing (shopping) page for our website.
 
@@ -49,9 +42,11 @@ The first line, ```<!DOCTYPE>``` is called **Document Type Declaration**. It tel
 
 Next is the ```<html>``` tag which contains the head tag and body tag.
 
-The head tag contains the title of our page, ```<title>```. This is also the place where we would link up external Stylesheet (like bootstrap) or our own custom made stylesheet. (Which we will be doing later on in the upcoming chapters).
+The head tag contains the title of our page, ```<title>```. This is also the place where we would link up an external stylesheet. (Which we will be doing later on in the upcoming chapters).
 
-The ```<body>``` element contains all the contents of an HTML document, such as headings, paragraphs, **images**, **hyperlinks**, **tables**, **lists**, etc. We also link our **javascript** file here.
+The ```<body>``` element contains all the contents of an HTML document, such as headings, paragraphs, **images**, **hyperlinks**, **tables**, **lists**, etc. We also link our **javascript** file here. 
+
+The head tag contains information about the document, while the body tag contains everything that you'll see in the browser. 
 
 # Displaying our 'Hello World'
 

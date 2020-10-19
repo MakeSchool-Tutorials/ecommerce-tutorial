@@ -6,24 +6,11 @@ slug: styling-header
 ## Styling the header
 Currently, our header and navbar don't really look like a header or navbar at the moment. We need to add some styles to it.
 
->[action] Navigate to your project root folder and create a new folder named `resources`.
->
-```bash
-mkdir resources
-```
-
 This folder will hold your css, javascript and image files.
 
->[action] Inside your `resources` folder, create another folder named `css`. Here you will store your css files.
+> Create a file named `styles.css`. This is where all your element styles would go to.
 >
 ```bash
-cd resources
-mkdir css
-```
-> Open the `css` folder and create a file named `styles.css`. This is where all your element styles would go to.
->
-```bash
-cd css
 touch styles.css
 ```
 > Now, open the `styles.css` file.
@@ -53,7 +40,7 @@ We're going to start by styling the **font family** and **font size**.
 > Open your styles.css file and add the following line of code.
 >
 ```css
-body{
+body {
   font-family: Helvetica;
   font-size: 16px;
   line-height: 1.5;
@@ -77,7 +64,7 @@ We need to use a ```<link>``` tag inside the ```<head>``` element to link our cs
 >[action] Navigate to `index.html`. Inside the ```<head>``` element of your `index.html`, add the ```<link>``` element.
 >
 ```html
-<link rel='stylesheet' href='./resources/css/styles.css'>
+<link rel='stylesheet' href='styles.css'>
 ```
 >
 > Now go ahead and refresh your page.
@@ -130,10 +117,11 @@ This will select ```<ul>``` elements inside the page-header class.
 >[action] Inside your `styles.css` file, add this code to style the navbar lists.
 >
 ```css
-.page-header ul{
+.page-header ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  list-style: none;
 }
 ```
 > Refresh your page again. You should now see the lists in rows.
@@ -143,7 +131,7 @@ To remove the bullet points in each list, we can set the property list-style to 
 >[action] Modify your **.page-header ul** rule in `styles.css`
 >
 ```css
-.page-header ul{
+.page-header ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -157,7 +145,7 @@ To remove the bullet points in each list, we can set the property list-style to 
 > 1. removing the underlines (text decorations) on the ```<a>``` tags.
 >
 ```css
-.page-header a{
+.page-header a {
   display: block;
   padding:0.5em;
   text-decoration:none;

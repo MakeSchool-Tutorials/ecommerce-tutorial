@@ -27,11 +27,9 @@ Now navigate to your resources folder.
 
 >[action]
 >
-> Move the **images** folder that's located in the repo you've just downloaded into the **resources** folder.
+> Move the **images** folder that's located in the repo you've just downloaded into your project folder.
 >
-> Inside your `resources` folder, create another folder named `js`. This folder will hold all your .js files including javascript and JSON files.
->
-> Move the `data.js` file located in the repo you've just downloaded to the `js` folder.  
+> Move the `data.js` into your project folder.  
 
 If you open your `data.js` file, you will see an array of JSON data.
 
@@ -79,18 +77,16 @@ Now that we have a good understanding of JSON, we can better understand what the
 >
 ```html
 <main class='items' id='items'>
-    <!--
-      Display moods here
-     -->
+    <!-- Display moods here -->
 </main>
 ```
 
 We will be using javascript to dynamically display all the items for the mood shop. We will use a **for loop** to loop through each object inside the `data.js` array and assign image as the image source tag, description as the paragraph to describe the image and price to show the price for each mood.
 
 >[action]
-> Navigate to the `js` folder (`ecommerce/resources/js`). Create a new file called `scripts.js`. This file will hold all your javascript logic to display the items, and future steps like adding them to the cart and removing them from the cart.
+> Create a new file called `scripts.js`. This file will hold all your javascript logic to display the items, and future steps like adding them to the cart and removing them from the cart.
 >
-> Open the `scripts.js` folder. First we need to get the reference to the containers where all the items will be in.
+> Open `scripts.js`. First we need to get the reference to the containers where all the items will be in.
 
 All items will be in the main tag. The main tag has an id of `items`. We can get this element using its id name. In order to do this, we can use the `document.getElementbyID` function. Then pass the id of the element to the function.
 
@@ -126,21 +122,19 @@ If you open ```data.js``` and see the image **key:value** pairs, the values are 
 >
 ```js
 // the length of our data determines how many times this loop goes around
-for (let i=0; i<data.length; ++i) {
-    // create a new div element and give it a class name
-    let newDiv = document.createElement('div');
- 	newDiv.className = 'item'
->
- 	// create an image element
-    let img = document.createElement('img');
-    // this will change each time we go through the loop. Can you explain why?
-    img.src = data[i].image
-    img.width = 300
-    img.height = 300
->
-    // Add the image to the div
-    newDiv.appendChild(img)
-    console.log(img)
+for (let i = 0; i < data.length; i += 1) {
+	// create a new div element and give it a class name
+	const newDiv = document.createElement('div');
+	newDiv.className = 'item'
+	// create an image element
+	const img = document.createElement('img');
+	// this will change each time we go through the loop. Can you explain why?
+	img.src = data[i].image
+	img.width = 300
+	img.height = 300
+	// Add the image to the div
+	newDiv.appendChild(img)
+	console.log(img)
 }
 ```
 
@@ -151,7 +145,7 @@ Let's break down the above code:
 Here we are looping through each object and for each of them, we create a `div` element:
 
 ```js
-let newDiv = document.createElement('div');
+const newDiv = document.createElement('div');
 ```
 
 This will create an html div element.
@@ -175,7 +169,7 @@ Let's start with the image.
 We can create the image tag using ```document.createElement('img')```
 
 ```js
-let img = document.createElement('img');
+const img = document.createElement('img');
 ```
 
 Each attribute that we want to add to the image could be added using ```img.attributeName```, which is how we added the src, width and height of the image:
@@ -195,8 +189,7 @@ img.height = 300
   > Add this code right above the ending body tag (```</body>```) in `index.html`.
   >
   ```js
-  <script src='./resources/js/scripts.js' type="module">
-  </script>
+  <script src='scripts.js' type="module"></script>
   ```
 
 ```console.log``` is a way to print our progress. Once we make the image, we are printing it to the console to see if it's being created. It is a good way to make sure if your code is working the way it's supposed to.
@@ -211,7 +204,7 @@ Now that we have created the image, we can append it to the `div` element we cre
 
 ```html
 <div>
-  <img src='/resource...' width=300 height=300>
+  <img src='images/...' width=300 height=300>
 </div>
 ```
 
@@ -236,22 +229,20 @@ Our javascript code should look like this at the end:
 
 ```js
 // the length of our data determines how many times this loop goes around
-for (let i=0; i<data.length; ++i) {
-    // create a new div element and give it a class name
-    let newDiv = document.createElement('div');
- 	newDiv.className = 'item'
-
- 	// create an image element
-    let img = document.createElement('img');
-    // this will change each time we go through the loop. Can you explain why?
-    img.src = data[i].image
-    img.width = 300
-    img.height = 300
-
-    // Add the image to the div
-    newDiv.appendChild(img)
-    // put new div inside items container
-    itemsContainer.appendChild(newDiv)
+for (let i = 0; i < data.length; i += 1) {
+	// create a new div element and give it a class name
+	const newDiv = document.createElement('div');
+	newDiv.className = 'item'
+	// create an image element
+	const img = document.createElement('img');
+	// this will change each time we go through the loop. Can you explain why?
+	img.src = data[i].image
+	img.width = 300
+	img.height = 300
+	// Add the image to the div
+	newDiv.appendChild(img)
+	// put new div inside items container
+	itemsContainer.appendChild(newDiv)
 }
 ```
 
@@ -279,13 +270,13 @@ Solution to the above is here, but try it on your own first!
 >
 ``` js
 // create a paragraph element for a description
-let desc = document.createElement('P')
+const desc = document.createElement('P')
 // give the paragraph text from the data
-desc.innerText =data[i].desc
+desc.innerText = data[i].desc
 // append the paragraph to the div
 newDiv.appendChild(desc)
 // do the same thing for price
-let price = document.createElement('P')
+const price = document.createElement('P')
 price.innerText = data[i].price
 newDiv.appendChild(price)
 ```
@@ -311,7 +302,8 @@ We will be adding a button element using javascript. This will be in the same fo
 > After the line where you created the price, add a line to create a button element.
 >
 ```js
-let button = document.createElement('button')
+// Make a button 
+const button = document.createElement('button')
 ```
 
 We should also make the `id` of each button unique.
@@ -321,6 +313,7 @@ We should also make the `id` of each button unique.
 > To do this we will assign the `id` to the name of the mood.
 >
 ```js
+// add an  id name to the button
 button.id = data[i].name
 ```
 
@@ -346,33 +339,39 @@ newDiv.appendChild(button)
 > At this point, our for loop should create image, description, price and an 'Add to Cart' button for each mood in the data array. Make sure it matches the following:
 >
 ```js
-for (let i=0; i<data.length; ++i) {
-  let newDiv = document.createElement('div');
- 	newDiv.className = 'item'
-  // display the image
-  let img = document.createElement('img');
-  img.src = data[i].image
-  img.width = 300
-  img.height = 300
-  newDiv.appendChild(img)
->
-  let desc = document.createElement('P')
-  desc.innerText =data[i].desc
-  newDiv.appendChild(desc)
-  let price = document.createElement('P')
-  price.innerText = data[i].price
-  newDiv.appendChild(price)
->
-  let button = document.createElement('button')
-  button.id = data[i].name
->
-  // creates a custom attribute called data-price.
-  // That will hold the price for each element in the button
-  button.dataset.price = data[i].price
-  button.innerHTML = "Add to Cart"
-  newDiv.appendChild(button)
-  // put new div inside items container
-  itemsContainer.appendChild(newDiv)
+// the length of our data determines how many times this loop goes around
+for (let i = 0; i < data.length; i += 1) {
+	// create a new div element and give it a class name
+	const newDiv = document.createElement('div');
+	newDiv.className = 'item'
+	// create an image element
+	const img = document.createElement('img');
+	// this will change each time we go through the loop. Can you explain why?
+	img.src = data[i].image
+	img.width = 300
+	img.height = 300
+	// Add the image to the div
+	newDiv.appendChild(img)
+	// put new div inside items container
+	itemsContainer.appendChild(newDiv)
+	// create a paragraph element for a description
+	const desc = document.createElement('P')
+	// give the paragraph text from the data
+	desc.innerText = data[i].desc
+	// append the paragraph to the div
+	newDiv.appendChild(desc)
+	// do the same thing for price
+	const price = document.createElement('P')
+	price.innerText = data[i].price
+	newDiv.appendChild(price)
+	// Make a button 
+	const button = document.createElement('button')
+	// add an  id name to the button
+	button.id = data[i].name
+	// creates a custom attribute called data-price. That will hold price for each element in the button
+	button.dataset.price = data[i].price
+	button.innerHTML = "Add to Cart"
+	newDiv.appendChild(button)
 }
 ```
 
