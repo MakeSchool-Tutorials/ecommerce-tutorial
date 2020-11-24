@@ -4,7 +4,7 @@ slug: styling-header
 ---
 
 ## Styling the header
-Currently, our header and navbar don’t really look like a header or navbar at the moment. We need to add some styles to it.
+Currently, our header and navbar don't really look like a header or navbar at the moment. We need to add some styles to it.
 
 This folder will hold your css, javascript and image files.
 
@@ -26,7 +26,7 @@ To learn more about selectors, visit [CSS selectors](https://www.w3schools.com/c
 
 # Styling the body element
 The body is the first thing we want to style.
-We’re going to start by styling the **font family** and **font size**.
+We're going to start by styling the **font family** and **font size**.
 
 **Line height** - to increase spacing between lines (1.5 - 1.6) is recommended
 
@@ -50,13 +50,13 @@ body {
 >
 > Now refresh your browser.
 
-Hmm, we were expecting to see some change but don’t see any. 🤔
+Hmm, we were expecting to see some change but don't see any. 🤔
 
 Can you guess why?
 
 > [solution]
 >
-> That’s because we haven’t linked our stylesheet in our HTML file.
+> That's because we haven't linked our stylesheet in our HTML file.
 We need to use a ```<link>``` tag inside the ```<head>``` element to link our css file.
 
 <!--  -->
@@ -84,10 +84,10 @@ We set flex properties on the parent element (container) to make elements inside
 
 The flex container becomes flexible by setting the **display** property to flex.
 
-```<Header>``` is our container so we will be setting the display property of header to flex. In order to refer to our header inside the css file we will be using it’s class name.
+```<Header>``` is our container so we will be setting the display property of header to flex. In order to refer to our header inside the css file we will be using it's class name.
 
 
-The class name for header is '**page-header**’.
+The class name for header is '**page-header**'.
 we use dot (.) before the name when referring to class names in css files.
 
 For example:  **.page-header**
@@ -162,7 +162,7 @@ Now is a good time to update your progress on Github.
 
 ```bash
 git add .
-git commit -m ‘styled the header and navbar’
+git commit -m 'styled the header and navbar'
 git push
 ```
 

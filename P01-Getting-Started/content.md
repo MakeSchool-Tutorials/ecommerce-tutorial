@@ -10,7 +10,7 @@ Did you know your emotions can change how you taste food?  I think everyone agre
 
 🥗🍔🍕🍇😋 
 
-Imagine if there was a place where you could go to and buy any type of mood you want. Well guess what? We’re going to build that! Well… sort of. Join me as we go deep into the world of HTML, CSS and Javascript and build The Mood Shop!
+Imagine if there was a place where you could go to and buy any type of mood you want. Well guess what? We're going to build that! Well… sort of. Join me as we go deep into the world of HTML, CSS and Javascript and build The Mood Shop!
 
 ![End product](assets/02_getting-started_items-display.png "End product")
 

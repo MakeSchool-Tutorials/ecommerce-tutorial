@@ -4,9 +4,9 @@ slug: header-and-navbar
 ---
 
 
-Now that we have seen how html works, let’s go ahead and start with working on our website.
+Now that we have seen how html works, let's go ahead and start with working on our website.
 
-Let’s start by displaying the **name** of our website and **navbar**.
+Let's start by displaying the **name** of our website and **navbar**.
 We will put these two inside a ```<header>``` tag.
 
 >[info] To learn more about header tag: [Header tag](https://www.w3schools.com/tags/tag_header.asp)
@@ -62,6 +62,6 @@ Yay! You should see the name of your site, **The Mood Shop**, and 3 links.
 >
 ```bash
 git add .
-git commit -m ‘made navbar skeleton’
+git commit -m 'made navbar skeleton'
 git push
 ```

@@ -41,6 +41,6 @@ Here you'll look over the code and make some syntactic improvements. We will als
 >
 ```bash
 git add .
-git commit -m ‘displayed cart items on console’
+git commit -m 'displayed cart items on console'
 git push
 ```

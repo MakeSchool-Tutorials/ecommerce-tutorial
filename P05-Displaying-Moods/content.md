@@ -44,7 +44,7 @@ const data = [{
   "id": 2,
   "name": 'sad',
   "image": './resources/images/sad_spongebob.gif',
-  "desc": "Tears are words that can’t be explained.",
+  "desc": "Tears are words that can't be explained.",
   "price": 5.99
 }
 ...
@@ -57,7 +57,7 @@ AKA JavaScript Object Notation
 A JSON object contains data in the form of key/value pairs:
 
 - The key and value pairs are separated by a colon(:)
-- Located left of the colon is the key, and on the right is it’s value.
+- Located left of the colon is the key, and on the right is it's value.
 
 > [info]
 >
@@ -73,7 +73,7 @@ Now that we have a good understanding of JSON, we can better understand what the
 >
 >Navigate to `index.html` file
 >
-> Below our header element in our `index.html` file, let’s add another element called **main**. This will hold all the mood items.
+> Below our header element in our `index.html` file, let's add another element called **main**. This will hold all the mood items.
 >
 ```html
 <main class='items' id='items'>
@@ -118,7 +118,7 @@ If you open ```data.js``` and see the image **key:value** pairs, the values are 
 
 > [action]
 >
-> Now let’s loop over each element inside each object and display their images. This for-loop goes inside the `scripts.js` file.
+> Now let's loop over each element inside each object and display their images. This for-loop goes inside the `scripts.js` file.
 >
 ```js
 // the length of our data determines how many times this loop goes around
@@ -161,12 +161,12 @@ newDiv.className = 'item'
 ```
 
 ```html
-<div class=’item’> </div>
+<div class='item'> </div>
 ```
 
 We want this div we created to hold the image, description and price of each item.
-Let’s start with the image.
-We can create the image tag using ```document.createElement(‘img’)```
+Let's start with the image.
+We can create the image tag using ```document.createElement('img')```
 
 ```js
 const img = document.createElement('img');
@@ -204,7 +204,7 @@ Now that we have created the image, we can append it to the `div` element we cre
 
 ```html
 <div>
-  <img src=’images/...’ width=300 height=300>
+  <img src='images/...' width=300 height=300>
 </div>
 ```
 
@@ -219,7 +219,7 @@ newDiv.appendChild(img)
 
 > [action]
 >
-> Now that we have the `div` with the image, let’s go ahead and append it to the main container, so that we could display it on our page. This will be done in the `scripts.js` file.
+> Now that we have the `div` with the image, let's go ahead and append it to the main container, so that we could display it on our page. This will be done in the `scripts.js` file.
 >
 ```js
 itemsContainer.appendChild(newDiv)
@@ -256,7 +256,7 @@ for (let i = 0; i < data.length; i += 1) {
 >
 ```html
 <div>
-  <img src=’/resource...’ width=300 height=300>
+  <img src='/resource...' width=300 height=300>
   <p>description of mood</p>
   <p>5.99</p>
 </div>
@@ -317,7 +317,7 @@ We should also make the `id` of each button unique.
 button.id = data[i].name
 ```
 
-There needs to be a way to access the price of each Mood when their “Add to Cart” button is clicked. 🤔
+There needs to be a way to access the price of each Mood when their "Add to Cart" button is clicked. 🤔
 
 We will use a ***custom data attribute*** to store the price for each mood on the button. 💡
 
@@ -390,6 +390,6 @@ Your page should now show each mood, with description, price and button.
 >
 ```bash
 git add .
-git commit -m ‘displayed moods with button using javascript’
+git commit -m 'displayed moods with button using javascript'
 git push
 ```

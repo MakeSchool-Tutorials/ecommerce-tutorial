@@ -55,9 +55,9 @@ Your HTML markup should now look like this:
 
 Follow this shopping cart tutorial to add the shopping cart functionality.
 
-The tutorial is slightly different, but we’re essentially using the same functionality of the shopping cart tutorial.
+The tutorial is slightly different, but we're essentially using the same functionality of the shopping cart tutorial.
 
-In the video tutorial, all code is written inside ```index.html```. But since we have a separate ```scripts.js``` file, we’ll write the javascript code in there instead of inside the ```<script>``` tag.
+In the video tutorial, all code is written inside ```index.html```. But since we have a separate ```scripts.js``` file, we'll write the javascript code in there instead of inside the ```<script>``` tag.
 
 You can write the javascript functions below the code you wrote for displaying moods in ```scripts.js``` file.
 
@@ -65,7 +65,7 @@ You can write the javascript functions below the code you wrote for displaying m
 >
 > **ONE MORE TIME, AS THIS IS IMPORTANT:**
 >
-> In the video tutorial, **all code is written inside ```index.html```.** But since we have a separate ```scripts.js``` file, **we’ll write the javascript code in there instead of inside the ```<script>``` tag.**
+> In the video tutorial, **all code is written inside ```index.html```.** But since we have a separate ```scripts.js``` file, **we'll write the javascript code in there instead of inside the ```<script>``` tag.**
 >
 > You can write the javascript functions below the code you wrote for displaying moods in ```scripts.js``` file.
 
@@ -93,6 +93,6 @@ In this video, we'll be discussing how to use objects to add items into an array
 >
 ```bash
 git add .
-git commit -m ‘add item and show item functions working’
+git commit -m 'add item and show item functions working'
 git push
 ```

@@ -36,6 +36,6 @@ Here we will take another look at the remove item function and use a default par
 >
 ```bash
 git add .
-git commit -m ‘added removeItem function’
+git commit -m 'added removeItem function'
 git push
 ```

@@ -26,10 +26,10 @@ We can access this `ul` element in our javascript file using its id **item-list*
 > On top of your ```scripts.js``` file, add a variable called `itemList` that will hold the reference to the `ul` element.
 >
 ```js
-const itemList = document.getElementById(‘item-list’)
+const itemList = document.getElementById('item-list')
 ```
 
-You can check if it’s getting the `ul` element by printing it into the console.
+You can check if it's getting the `ul` element by printing it into the console.
 
 > [action]
 > Add ```console.log(itemList)``` into your `scripts.js` file to check.
@@ -80,7 +80,7 @@ Follow video 9 to display quantity of items
 
 > [action]
 >
-> **Note**: In the video, to display the cart, the `div` and `ul` element goes into the `body` tag, but for our project, **we’re going to put these elements inside the ```<footer> </footer>``` element.**
+> **Note**: In the video, to display the cart, the `div` and `ul` element goes into the `body` tag, but for our project, **we're going to put these elements inside the ```<footer> </footer>``` element.**
 >
 ```html
 <footer>
@@ -109,6 +109,6 @@ In this video you'll print the quantity and total of all items in the shopping c
 >
 ```bash
 git add .
-git commit -m ‘connect cart to footer’
+git commit -m 'connect cart to footer'
 git push
 ```
